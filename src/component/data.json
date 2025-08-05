@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "Name": "kamalesh",
+    "batch": "batch-A",
+    "phoneNumber": "9840225618",
+    "mail": "kamal@email.com"
+  },
+  {
+    "id": 2,
+    "Name": "jai",
+    "batch": "batch-A",
+    "phoneNumber": "9600032105",
+    "mail": "jai@gmail.com"
+  },
+  {
+    "id": 3,
+    "Name": "dinesh",
+    "batch": "batch-A",
+    "phoneNumber": "7200507903",
+    "mail": "dinesh@gmail.com"
+  },
+  {
+    "id": 4,
+    "Name": "santhosh",
+    "batch": "batch-A",
+    "phoneNumber": "9600062305",
+    "mail": "santhosh@gmail.com"
+  },
+  {
+    "id": 5,
+    "Name": "kaif",
+    "batch": "batch-A",
+    "phoneNumber": "9840224567",
+    "mail": "kaif@gmail.com"
+  }
+]
