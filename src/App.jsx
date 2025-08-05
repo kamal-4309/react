@@ -3,27 +3,37 @@ import Navbar from './component/navbar';
 import Cards from './component/card';
 import Table from './component/table';
 import './app.css';
-import SchoolAttendanceChart from './component/chart';
+import SchoolAttendanceChart from './chart/line';
+import BatchStudentsBarChart from './chart/bar';
 
 const App = () => {
   return (
     <div className="flex">
       <Navbar />
 
-<div className="ml-80 w-full p-6 flex flex-col bg-gradient-to-r from-[#1f1c2c] via-[#2c3e50] to-[#000000]">        <Cards />
+      
+{/* cards */}
+      <div className="ml-80 w-full p-6 flex flex-col bg-gradient-to-r from-[#1f1c2c] via-[#2c3e50] to-[#000000]">
+        <Cards />
 
 
-          {/* table  */}
-
+{/* charts */}
         <div className="flex gap-6 mt-50">
-          <div className="flex-1">
-            <Table />
-          </div>
+          <div className="w-full mt-40 flex gap-6 shadow">
+            <div className="w-1/2">
+              <SchoolAttendanceChart />
+            </div>
 
-          {/* Chart Section */}
-          <div className="w-[35%]  mt-40 shadow">
-            <SchoolAttendanceChart />
+            
+            <div className="w-1/2">
+              <BatchStudentsBarChart />
+            </div>
           </div>
+        </div>
+
+        {/* Table */}
+        <div className="mt-10">
+          <Table />
         </div>
       </div>
     </div>

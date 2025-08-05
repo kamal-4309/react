@@ -21,7 +21,7 @@ const Cards = () => {
     </div>
 
     <div className="[transform:translate3d(0,0,40px)] transition-all duration-500">
-      <div className="text-xl font-bold text-white-800">24</div>
+      <div className="text-xl font-bold text-white-800">400</div>
       <div className="text-sm text-white-500">Total Students</div>
     </div>
 

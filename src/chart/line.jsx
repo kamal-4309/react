@@ -10,7 +10,7 @@ export default function SchoolAttendanceChart() {
       zoom: { enabled: false },
        background: "#feffffff"
     },
-    colors: ["#3b82f6", "#10b981"], // blue & green for school theme
+    colors: ["#3b82f6", "#10b981"], 
     dataLabels: { enabled: false },
     stroke: { curve: "smooth", width: 2 },
     grid: {
@@ -68,7 +68,7 @@ export default function SchoolAttendanceChart() {
 
   return (
     <div className="p-4 rounded-lg shadow-lg bg-transparent">
-      <h2 className=" font-semibold mb-4 text-white ">Monthly Attendance Rate</h2>
+      <h2 className=" text-2xl font-semibold mb-4 text-white ">Monthly Attendance Rate</h2>
       <Chart options={options} series={series} type="area" height={200} />
     </div>
   );
