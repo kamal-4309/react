@@ -8,7 +8,7 @@ export default function SchoolAttendanceChart() {
       type: "area",
       toolbar: { show: false },
       zoom: { enabled: false },
-       background: "#feffffff"
+       background: "transparent"
     },
     colors: ["#3b82f6", "#10b981"], 
     dataLabels: { enabled: false },
@@ -38,7 +38,7 @@ export default function SchoolAttendanceChart() {
         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
       ],
       labels: {
-        style: { fontSize: "12px" },
+        style: { fontSize: "12px" ,colors: "white"},
       },
     },
     yaxis: {
@@ -46,6 +46,7 @@ export default function SchoolAttendanceChart() {
       min: 0,
       labels: {
         formatter: (value) => `${value}%`,
+        style: { fontSize: "12px" ,colors: "white"},
       },
     },
     tooltip: {
@@ -57,19 +58,19 @@ export default function SchoolAttendanceChart() {
 
   const series = [
     {
-      name: "2024 Attendance",
+      name: "2025 Attendance",
       data: [92, 90, 95, 88, 85, 89, 93, 91, 94, 96, 90, 92],
     },
     {
-      name: "2023 Attendance",
+      name: "2024 Attendance",
       data: [88, 86, 90, 84, 80, 85, 87, 86, 89, 91, 88, 90], 
     },
   ];
 
   return (
     <div className="p-4 rounded-lg shadow-lg bg-transparent">
-      <h2 className=" text-2xl font-semibold mb-4 text-white ">Monthly Attendance Rate</h2>
-      <Chart options={options} series={series} type="area" height={200} />
+      <h2 className=" text-2xl font-semibold mb-4 text-white ">Monthly Attendance </h2>
+      <Chart options={options} series={series} type="area" height={360} />
     </div>
   );
 }

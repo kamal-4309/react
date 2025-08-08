@@ -17,7 +17,7 @@ export default function BatchStudentsBarChart() {
         borderRadius: 5,
       },
     },
-    colors: ["#3b82f6"], 
+    colors: ["#6d16eeff"], 
     dataLabels: { enabled: false },
     xaxis: {
       categories: [

@@ -1,43 +1,39 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './component/navbar';
-import Cards from './component/card';
-import Table from './component/table';
-import './app.css';
-import SchoolAttendanceChart from './chart/line';
-import BatchStudentsBarChart from './chart/bar';
+import './App.css'; 
+import Home from './component/dashboard/home';
+import Students from './component/students/std';
+import Attendance from './component/Attendance/attendence';
+import Performance from './component/performance/perform';
+import FeesDetails from './component/FeesStatus/fees';
+import Logout from './component/logout/logout';
+import Library from './component/library/lib';
 
 const App = () => {
   return (
-    <div className="flex">
-      <Navbar />
-
-      
-{/* cards */}
-      <div className="ml-80 w-full p-6 flex flex-col bg-gradient-to-r from-[#1f1c2c] via-[#2c3e50] to-[#000000]">
-        <Cards />
-
-
-{/* charts */}
-        <div className="flex gap-6 mt-50">
-          <div className="w-full mt-40 flex gap-6 shadow">
-            <div className="w-1/2">
-              <SchoolAttendanceChart />
-            </div>
-
+    <BrowserRouter>
+      <div className="flex bg-gradient-to-b from-[#0b0b0d] via-[#100c1c] via-[#1c0f30] to-[#080808]">
+        <Navbar />
+        <div className="ml-80 w-full ">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Students" element={<Students />} />
+            <Route path="/Attendance" element={<Attendance />} />
+            <Route path="/Performance" element={<Performance />} />
+            <Route path="/FeesDetails" element={<FeesDetails />} />
+            <Route path="/Logout" element={<Logout />} />
+            <Route path="/Library" element={<Library />} />
             
-            <div className="w-1/2">
-              <BatchStudentsBarChart />
-            </div>
-          </div>
-        </div>
-
-        {/* Table */}
-        <div className="mt-10">
-          <Table />
+          </Routes>
         </div>
       </div>
-    </div>
+    </BrowserRouter>
+
+
+
   );
 };
 
 export default App;
+

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import data from './data.json';
-import Row from './row.jsx';
+import data from '../dashboard/data.json';
+import Row from './row';
 
 const Table = () => {
   const [contacts, setContacts] = useState(data);
   const [editing, setEditing] = useState(null);
-  const [find,setFind] = useState("")
+  const [Find,setFind] = useState("")
 
 
 // save option

@@ -12,7 +12,7 @@ const Cards = () => {
 
 {/* student */}
 <div className="w-64 [perspective:1000px]">
-  <div className="w-full shadow-cyan-500 bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg rounded-lg pr-11 px-6 py-10 flex items-center space-x-4 transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:[transform:rotate3d(0.5,1,0,30deg)]">
+  <div className="w-full shadow-purple-500 bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg rounded-lg pr-11 px-6 py-10 flex items-center space-x-4 transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:[transform:rotate3d(0.5,1,0,30deg)]">
     
     <div className="bg-gray-100 p-7 rounded-full flex items-center justify-center [transform:translate3d(0,0,40px)] transition-all duration-500">
       <svg className="w-10 h-10 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
@@ -31,7 +31,7 @@ const Cards = () => {
 {/* batch */}
 
 <div className="w-64 [perspective:1000px]">
-  <div className="w-full shadow-cyan-500 bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg rounded-lg pr-11 px-6 py-10 flex items-center space-x-4 transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:[transform:rotate3d(0.5,1,0,30deg)]">
+  <div className="w-full shadow-purple-500 bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg rounded-lg pr-11 px-6 py-10 flex items-center space-x-4 transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:[transform:rotate3d(0.5,1,0,30deg)]">
     
     <div className="bg-gray-100 p-7 rounded-full flex items-center justify-center [transform:translate3d(0,0,40px)] transition-all duration-500">
       <svg  viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 text-gray-600">
@@ -53,7 +53,7 @@ const Cards = () => {
 
 
 <div className="w-64 [perspective:1000px]">
-  <div className="w-full shadow-cyan-500 bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg rounded-lg pr-11 px-6 py-10 flex items-center space-x-4 transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:[transform:rotate3d(0.5,1,0,30deg)]">
+  <div className="w-full shadow-purple-500 bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg rounded-lg pr-11 px-6 py-10 flex items-center space-x-4 transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:[transform:rotate3d(0.5,1,0,30deg)]">
     
     <div className="bg-gray-100 p-7 rounded-full flex items-center justify-center [transform:translate3d(0,0,40px)] transition-all duration-500">
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 text-gray-600">
@@ -74,7 +74,7 @@ const Cards = () => {
 {/* attendence */}
 
 <div className="w-64 [perspective:1000px]">
-  <div className="w-full shadow-cyan-500 bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg rounded-lg pr-11 px-6 py-10 flex items-center space-x-4 transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:[transform:rotate3d(0.5,1,0,30deg)]">
+  <div className="w-full shadow-purple-500 bg-white/10 backdrop-blur-md border border-white/10 text-white shadow-lg rounded-lg pr-11 px-6 py-10 flex items-center space-x-4 transition-all duration-500 ease-in-out [transform-style:preserve-3d] hover:[transform:rotate3d(0.5,1,0,30deg)]">
     
     <div className="bg-gray-100 p-7 rounded-full flex items-center justify-center [transform:translate3d(0,0,40px)] transition-all duration-500">
       <svg  viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 text-gray-600">
