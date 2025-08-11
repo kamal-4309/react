@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Row = ({ contacts, setEditing, editing, handleSave,handleDelete}) => {
+const Row = ({ contacts, setEditing, editing, handleSave,handleDelete,add,setAdd}) => {
   const Editing = editing === contacts.id;
 
   const [formData, setFormData] = useState({
@@ -43,6 +43,11 @@ const Row = ({ contacts, setEditing, editing, handleSave,handleDelete}) => {
 
   return (
     <>
+
+{/* for adding */}
+
+
+            {/* edit or display the data */}
     <tr className="even:bg-white/5 odd:bg-transparent hover:bg-white/10 transition">
     {/* condition  */}
       {Editing ? (

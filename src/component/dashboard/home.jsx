@@ -15,10 +15,10 @@ const Home = () => {
       {/* charts */}
       <div className="flex gap-6 mt-40">
         <div className="w-full mt-10 flex gap-5 shadow">
-          <div className="w-1/2">
+          <div className="w-1/2 p-6 rounded-xl shadow-[0_4px_20px_#6d16eeff]">
             <SchoolAttendanceChart />
           </div>
-          <div className="w-1/2 mt-1">
+          <div className="w-1/2 mt-1 p-6 rounded-xl shadow-[0_4px_20px_#6d16eeff] ">
             <BatchStudentsBarChart />
           </div>
         </div>

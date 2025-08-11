@@ -3,37 +3,43 @@ import Chart from 'react-apexcharts';
 
 const BubbleChart = () => {
   const options = {
-    chart: {
-      height: 350,
-      type: 'bubble',
-      toolbar: { show: false }
+  chart: {
+    height: 350,
+    type: 'bubble',
+    toolbar: { show: false }
+  },
+  dataLabels: {
+    enabled: false
+  },
+  xaxis: {
+    title: { text: 'Score (%)', style: { color: '#FFFFFF' } },
+    min: 0,
+    max: 100,
+    labels: {
+      style: { colors: '#FFFFFF' }
+    }
+  },
+  yaxis: {
+    title: { text: 'Attendance (%)', style: { color: '#FFFFFF' } },
+    min: 0,
+    max: 100,
+    labels: {
+      style: { colors: '#FFFFFF' }
+    }
+  },
+  tooltip: {
+    y: {
+      formatter: (val) => `${val}% Attendance`
     },
-    dataLabels: {
-      enabled: false
+    x: {
+      formatter: (val) => `${val}% Score`
     },
-    xaxis: {
-      title: { text: 'Score (%)' },
-      min: 0,
-      max: 100
-    },
-    yaxis: {
-      title: { text: 'Attendance (%)' },
-      min: 0,
-      max: 100
-    },
-    tooltip: {
-      y: {
-        formatter: (val) => `${val}% Attendance`
-      },
-      x: {
-        formatter: (val) => `${val}% Score`
-      },
-      z: {
-        formatter: (val) => `${val}% Participation`
-      }
-    },
-    colors: ['#3B82F6', '#10B981', '#F59E0B'] 
-  };
+    z: {
+      formatter: (val) => `${val}% Participation`
+    }
+  },
+  colors: ['#3B82F6', '#10B981', '#F59E0B']
+};
 
   const series = [
     {
@@ -55,8 +61,8 @@ const BubbleChart = () => {
   ];
 
   return (
-    <div className="bg-white p-6 shadow rounded-lg w-full max-w-4xl mx-auto">
-      <h2 className="text-xl font-semibold mb-4 text-white-800">Score vs Attendance vs Participation</h2>
+    <div className="bg-transparent p-6 shadow rounded-lg w-full  mx-auto">
+      <h2 className="text-xl font-semibold mb-4 text-white">Score vs Attendance vs Participation</h2>
       <Chart options={options} series={series} type="bubble" height={350} />
     </div>
   );

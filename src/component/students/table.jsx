@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import data from '../dashboard/data.json';
 import Row from './row';
+// import Adddata from './adddata';
 
 const Table = () => {
   const [contacts, setContacts] = useState(data);
@@ -34,7 +35,12 @@ const handleSearch = (info) => {
 }
 
   return (
+
+      
     <>
+
+    {/* <Adddata className = "w-1/2" onAddStudent={handleAddStudent} /> */}
+
       {/* head */}
       <div className="text-5xl font-bold text-white mb-9">
         <h1>Student Details</h1>
@@ -84,6 +90,7 @@ const handleSearch = (info) => {
                   editing={editing}
                   handleSave={handleSave}
                   handleDelete = {handleDelete}
+                  
                 />
              
             ))}
